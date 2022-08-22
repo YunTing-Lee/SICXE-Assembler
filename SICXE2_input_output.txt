@@ -1,0 +1,70 @@
+Line  Location  Source code                              Object code
+----  -------- -------------------------                 -----------
+  5 0000	COPY    START 0				
+ 10 0000		var1	RESW	1				
+ 15 0003		var2	RESB	12				
+ 20 000C		var3  EQU  12				
+ 25 000F	add var1		1B2FEE		
+ 30 0012	+addf var2		5B100003		
+ 35 0016	addr a,b		9003		
+ 40 0018	+and var1		43100000		
+ 45 001C	clear b		B430		
+ 50 001E	comp 0		2B0000		
+ 55 0021	+compf var3		8B10000C		
+ 60 0025	compr b,a		A030		
+ 65 0027	div var1		272FD6		
+ 70 002A	divf var1		672FD3		
+ 75 002D	divr l,s		9C24		
+ 80 002F	fix		C4		
+ 85 0030	float		C0		
+ 90 0031	lop1 hio		F4		
+ 95 					
+100 0032	j lop1		3F2FFC		
+105 0035	jeq loop2		33200B		
+110 0038	+jgt lop1		37100031		
+115 003C	+jlt loop2		3B100043		
+120 0040	jsub var1		4B2FBD		
+125 0043	loop2 lda =c'eof'		03206C		
+130 0046	+ldb =c'eof'		6B1000B2		
+135 004A	ldch 5		530005		
+140 004D	ldf 1		730001		
+145 0050	ldl 2		0B0002		
+150 0053	+lds var1		6F100000		
+155 0057	      ldt var1		772FA6		
+160 005A		ldx var1		072FA3		
+165 005D	+lps var1		D3100000		
+170 0061		Mul 2		230002		
+175 0064	+mulf 4		63100004		
+180 0068	mulr s,b		9843		
+185 006A	norm		C8		
+190 006B	or var1		472F92		
+195 006E	+rd var2		DB100003		
+200 0072	rmo a,b		AC03		
+205 0074	rsub		4F0000		
+210 		.this is also comment				
+215 0077	sio		F0		
+220 0078	ssk var1		EF2F85		
+225 007B	sta var1		0F2F82		
+230 007E	+stb var1		7B100000		
+235 0082	+stch var1		57100000		
+240 0086	stf var1		832F77		
+245 0089	sti var1		D72F74		
+250 008C	stl var1		172F71		
+255 008F	+sts var1		7F100000		
+260 0093	stsw var1		EB2F6A		
+265 0096	stt =x'f1'		87201D		
+270 0099	+stx var1		13100000		
+275 009D	sub var1		1F2F60		
+280 00A0	subf =x'b1'		5F2012		
+285 00A3	subr b,s		9434		
+290 00A5	svc 1		B010		
+295 00A7	+td var2		E3100003		
+300 00AB		tio		F8		
+305 00AC			tix var1		2F2F51		
+310 	   tixr a,b				syntax error
+315 00AF		wd 1		DF0001		
+320 	END	FIRST				
+325 00B2	=eof BYTE C'eof'		656F66		
+330 00B5	=b1 BYTE X'b1'		b1		
+335 00B6	=f1 BYTE X'f1'		f1		
+340 	.				
