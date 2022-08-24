@@ -23,7 +23,7 @@ Code::Block20.03
 1. 使用者一開始要先輸入SIC/SICXE source code的input檔名稱，不用加上附檔名，若使用者輸入的檔案不存在則會請使用者重新輸入檔名，直到這個檔案存在為止。
 2. 程式將input檔翻譯完成後會將結果寫到一個新的檔案裡，output檔的名稱會自動命名為{原input檔名}+ "_output.txt"，例如原始input檔名稱為"SIC_input.txt"，則會將結果輸出到叫"SIC_input_output.txt"的檔案裡。
 
-## 程式運作流程 : 
+## 程式運作流程說明 : 
 - pass1 : 將source program中有定義的label放入SYMTAB，判斷是否為duplicate symbol，並根據OPTAB查詢每行指令的長度或依照pseudo指示作對應動作，然後更新LOCCTR。
 ![image](https://github.com/YunTing-Lee/SICXE-Assembler/blob/main/Picture/SICXE%20pass1.png)
 
