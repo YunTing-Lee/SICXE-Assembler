@@ -1,5 +1,11 @@
 # SICXE-Assembler
 
+## 開發平台
+Windows 10
+
+## 開發環境
+Code::Block20.03
+
 ## 說明
 讀入使用者所事先定義好的Table1.table(instruction table), Table2.table(pseudo table), Table3.table(register table), Table4.table(delimeter table)與SIC/SICXE source code的檔案(SIC_input.txt)，將檔案裡的每道指令翻成機器碼，寫入到一個新的output檔中，可以使用的pseudo instruction有START、END、BYTE、WORD、RESB、RESW、EQU、BASE、LTORG。  
 - START : 若第一個指令為START，則會指定starting address，否則預設為0000
